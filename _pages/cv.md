@@ -16,6 +16,11 @@ toc:
 
 ## Work Experience
 
+- Oct 2023 - Aug 2024: Summer Research Intern at **a16z crypto**
+
+  - The research cohort is a team of six full-time blockchain researchers led by [Tim Roughgarden](https://a16zcrypto.com/team/tim-roughgarden/)
+  - Advised by [Justin Thaler](https://a16zcrypto.com/team/justin-thaler/) who leads the [Jolt](https://eprint.iacr.org/2023/1217) RISC-V zkVM project.
+
 - Oct 2023 - Aug 2024: Cryptographic Software Engineer at **Irreducible**
 
   - Contributed to the Rust open source Binius repo (state-of-the-art SNARK proof system)

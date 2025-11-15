@@ -27,14 +27,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a second-year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), advised by [Prof. Eran Tromer](https://cs-people.bu.edu/tromer/).
+I am a second-year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), advised by [Eran Tromer](https://cs-people.bu.edu/tromer/).
 
 ### Research Interests
 
-My research focuses on **probabilistic proof systems**, namely **SNARGs** (succinct non-interactive arguments). My recent work also explores **property testing** and the co-design of **homomorphic encryption** and **verifiable computation** protocols.
+My research focuses on **probabilistic proof systems**, namely **SNARGs** (succinct non-interactive arguments). My recent work also includes **property testing** and the co-design of **homomorphic encryption** and **verifiable computation** protocols.
 
 ### Background
 
 Prior to my Ph.D., I worked as a software engineer at several cryptography startups, including [Proven](https://www.proven.tools/) and [Irreducible](https://www.irreducible.com/).
 
 I earned my B.S. in Computer Science (with an additional major in Mathematics) from Carnegie Mellon University in 2020.
+
+### Contact
+
+If you would like to chat, please shoot me an email. Reach me at [FirstNameLastInitial] [at] BU [dot] edu.
