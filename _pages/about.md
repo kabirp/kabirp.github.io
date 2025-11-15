@@ -14,7 +14,7 @@ profile:
     <p>Boston, MA 02215</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -27,11 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a second year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), advised by [Eran Tromer](https://cs-people.bu.edu/tromer/).
+I am a second-year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), advised by [Prof. Eran Tromer](https://cs-people.bu.edu/tromer/).
 
-My work so far has largely focused on probabilistic proof systems, namely SNARGs (succinct non-interactive arguments).
-Lately, I have worked on property testing and explored co-design of homomorphic encryption and verifiable computation protocols.
+### Research Interests
 
-Before Boston University, I worked as a software engineer at a few interesting (now defunct) cryptography startups, including [Proven](https://www.proven.tools/) and [Irreducible](https://www.irreducible.com/).
+My research focuses on **probabilistic proof systems**, namely **SNARGs** (succinct non-interactive arguments). My recent work also explores **property testing** and the co-design of **homomorphic encryption** and **verifiable computation** protocols.
 
-I earned my B.S. in Computer Science with an additional major in Mathematics at Carnegie Mellon University in 2020.
+### Background
+
+Prior to my Ph.D., I worked as a software engineer at several cryptography startups, including [Proven](https://www.proven.tools/) and [Irreducible](https://www.irreducible.com/).
+
+I earned my B.S. in Computer Science (with an additional major in Mathematics) from Carnegie Mellon University in 2020.
