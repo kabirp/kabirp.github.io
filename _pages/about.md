@@ -35,7 +35,9 @@ My research focuses on **probabilistic proof systems**, namely **SNARGs** (succi
 
 ### Background
 
-Prior to my Ph.D., I worked as a software engineer at several cryptography startups, including [Proven](https://www.proven.tools/) and [Irreducible](https://www.irreducible.com/).
+Prior to my Ph.D., I was a software engineer at the cryptography startups [Proven](https://www.proven.tools/) and [Irreducible](https://www.irreducible.com/).
+
+I am especially grateful for my time at Irreducible, where I had the opportunity to learn from excellent mentors, including [Jim Posen](https://x.com/jimpo_potamus) and [Ben Diamond](https://benediamond.github.io/).
 
 I earned my B.S. in Computer Science (with an additional major in Mathematics) from Carnegie Mellon University in 2020.
 
