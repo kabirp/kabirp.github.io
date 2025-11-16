@@ -26,6 +26,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 I am a second-year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), under the supervision of [Prof. Eran Tromer](https://cs-people.bu.edu/tromer/).
 
 ### Research Interests
@@ -42,9 +43,9 @@ I earned my B.S. in Computer Science (with an additional major in Mathematics) f
 
 My path from industry to academia was made possible by many incredible people, and I am especially grateful to a few of them:
 
-* I learned immensely from [**Jim Posen**](https://x.com/jimpo_potamus) and [**Ben Diamond**](https://benediamond.github.io/) at Irreducible.
-* [**Prof. Nick Spooner**](https://spooner.cc/), visiting NYU in 2023-2024, generously made time for me, which was my first experience with academic research.
-* A huge thank you is owed to [**Prof. Anil Ada**](https://www.pandanotes.org/servers/anil/), my main mentor throughout my undergrad. His course is what inspired my interest in theoretical computer science.
+- I learned immensely from [**Jim Posen**](https://x.com/jimpo_potamus) and [**Ben Diamond**](https://benediamond.github.io/) at Irreducible.
+- [**Prof. Nick Spooner**](https://spooner.cc/), visiting NYU in 2023-2024, generously made time for me, which was my first experience with academic research.
+- A huge thank you is owed to [**Prof. Anil Ada**](https://www.pandanotes.org/servers/anil/), my main mentor throughout my undergrad. His course is what inspired my interest in theoretical computer science.
 
 ### Contact
 
