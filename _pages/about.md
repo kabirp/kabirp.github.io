@@ -49,4 +49,4 @@ My path from industry to academia was made possible by many incredible people, a
 
 ### Contact
 
-If you would like to chat, please shoot me an email. Reach me at **[FirstNameLastInitial] [at] BU [dot] edu**.
+If you would like to chat, please email me at **[First_Name] [Last_Initial] [at] BU [dot] edu**.
