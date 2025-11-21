@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>CDS 1001</p>
+    <p>CDS 1043</p>
     <p>665 Commonwealth Avenue</p>
     <p>Boston, MA 02215</p>
 
