@@ -4,5 +4,14 @@
   year         = {2025},
   primaryclass = {cs.CC},
   arxiv        = {2510.21589},
-  selected     = {true}
+  selected     = {true},
+  abstract     = {
+                  The model of \emph{relative-error property testing} of Boolean functions has been the subject of significant recent research effort \cite{CDHLNSY2024,rel-error-conj-DL,rel-error-junta}.
+                  In this paper we consider the problem of relative-error testing an unknown and arbitrary $f: \zo^n \to \zo$ for the property of being a \emph{unate} function, i.e.~a function that is either monotone non-increasing or monotone non-decreasing in each of the $n$ input variables.
+                  
+                  Our first result is a one-sided non-adaptive algorithm for this problem that makes $\tilde{O}(\log(N)/\eps)$ samples and queries, where $N=|f^{-1}(1)|$ is the number of satisfying assignments of the function that is being tested and the value of $N$ is given as an input parameter to the algorithm.
+                  Building on this algorithm, we next give a one-sided adaptive algorithm for this problem that does not need to be given the value of $N$ and with high probability makes $\tilde{O}(\log(N)/\eps)$ samples and queries.
+                  
+                  We also give lower bounds for both adaptive and non-adaptive two-sided algorithms that are given the value of $N$ up to a constant multiplicative factor. In the non-adaptive case, our lower bounds essentially match the complexity of the algorithm that we provide.
+                  }
 }
