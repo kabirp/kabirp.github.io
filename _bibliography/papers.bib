@@ -6,12 +6,30 @@
   arxiv        = {2510.21589},
   selected     = {true},
   abstract     = {
-                  The model of \emph{relative-error property testing} of Boolean functions has been the subject of significant recent research effort \cite{CDHLNSY2024,rel-error-conj-DL,rel-error-junta}.
-                  In this paper we consider the problem of relative-error testing an unknown and arbitrary $f: \zo^n \to \zo$ for the property of being a \emph{unate} function, i.e.~a function that is either monotone non-increasing or monotone non-decreasing in each of the $n$ input variables.
+                  The model of relative-error property testing of Boolean functions has been the subject of significant recent research effort.
+                  In this paper we consider the problem of relative-error testing an unknown and arbitrary $f: \{0,1\}^n \to \{0,1\}$ for the property of being a unate function, i.e. a function that is either monotone non-increasing or monotone non-decreasing in each of the $n$ input variables.
                   
                   Our first result is a one-sided non-adaptive algorithm for this problem that makes $\tilde{O}(\log(N)/\eps)$ samples and queries, where $N=|f^{-1}(1)|$ is the number of satisfying assignments of the function that is being tested and the value of $N$ is given as an input parameter to the algorithm.
                   Building on this algorithm, we next give a one-sided adaptive algorithm for this problem that does not need to be given the value of $N$ and with high probability makes $\tilde{O}(\log(N)/\eps)$ samples and queries.
                   
                   We also give lower bounds for both adaptive and non-adaptive two-sided algorithms that are given the value of $N$ up to a constant multiplicative factor. In the non-adaptive case, our lower bounds essentially match the complexity of the algorithm that we provide.
                   }
+}
+
+@misc{PLFT25,
+  title    = {Laminate: Delegation with Integrity and Secrecy},
+  author   = {Kabir Peshawaria and Zeyu Liu and Ben Fisch and Eran Tromer},
+  year     = {2025},
+  selected = {true},
+  abstract = {
+              In outsourcing computation to untrusted servers, one can cryptographically ensure privacy using Fully Homomorphic Encryption (FHE) or ensure integrity using Verifiable Computation (VC) such as SNARK proofs. While each is practical for some applications in isolation, efficiently composing FHE and VC into Verifiable Computing on Encrypted Data (VCoED) remains an open problem.
+              
+              Existing approaches generally fall into two categories: SNARK-over-FHE, which proves the correctness of FHE operations but is impractically slow for the server; and FHE-over-SNARK, which evaluates a SNARK prover homomorphically. Unfortunately, prior FHE-over-SNARK constructions suffer from large proof sizes and super-constant multiplicative depth due to their reliance on Polynomial Commitments. Additionally, they incur high witness reduction costs by forcing payload data into fixed plaintext fields, and they monopolize the FHE scheme's parallel capacity for commitment generation, preventing the payload computation itself from exploiting SIMD batching.
+              
+              In this work, we introduce Laminate, the first practical compiler that upgrades BGV-style FHE schemes into a full VCoED protocol. Laminate draws inspiration from the GKR protocol, which crucially does not require the prover to commit to intermediate values of the computation. This allows our compiler to add only a small constant multiplicative depth to the FHE scheme, whereas prior works require a super-constant increase. Specifically, we require only 1.5 levels (one ciphertext-ciphertext and one scalar-ciphertext multiplication) when utilizing all SIMD slots for independent instances, or 2.5 levels for smaller batches using our novel transcript packing technique.
+              
+              Laminate demonstrates a 660x speedup in homomorphic proving time compared to the state-of-the-art Phalanx scheme when using all SIMD slots for independent instances,
+              and a proof size reduction of 230x independent of the number of instances.
+              Beyond these improvements, Laminate provides even greater end-to-end efficiency gains. Our field-agnostic design eliminates the expensive witness reduction costs inherent to prior works, where the payload computation's plaintext field often mismatches the SNARK prover's fixed field. Furthermore, by minimizing the noise overhead for proving, Laminate enables significantly faster payload evaluation than prior approaches.
+              }
 }
