@@ -14,6 +14,10 @@ toc:
 - Ph.D. in Cryptography, **Boston University**, 2029 (expected)
 - B.S. in Computer Science and Mathematics, **Carnegie Mellon University**, 2020
 
+## Publications
+
+{% bibliography -f papers %}
+
 ## Work Experience
 
 - May 2025 - Aug 2025: Summer Research Intern at **a16z crypto**
