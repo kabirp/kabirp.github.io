@@ -44,12 +44,19 @@
           {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
         {%- endif -%}
         {%- if author_is_self -%}
-          <span style="font-weight: bold;">{{author.first}} {{author_last_html}}</span>
+          <span style="font-weight: bold;">
+            {{- author.first }}
+            {{ author_last_html -}}
+          </span>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{coauthor_url}}">{{author.first}} {{author_last_html}}</a>
+            <a href="{{coauthor_url}}">
+              {{- author.first }}
+              {{ author_last_html -}}
+            </a>
           {%- else -%}
-            {{author.first}} {{author_last_html}}
+            {{ author.first }}
+            {{ author_last_html }}
           {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
@@ -69,37 +76,37 @@
         {%- endfor -%}
         , and
         <span
-            class="more-authors"
-            title="click to view {{more_authors_hide}}"
-            onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.text(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-              }, '{{site.more_authors_animation_delay}}');
-            "
-        >{{more_authors_hide}}</span>
+          class="more-authors"
+          title="click to view {{more_authors_hide}}"
+          onclick="
+            var element = $(this);
+            element.attr('title', '');
+            var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
+            var cursorPosition = 0;
+            var textAdder = setInterval(function(){
+              element.text(more_authors_text.substring(0, cursorPosition + 1));
+              if (++cursorPosition == more_authors_text.length){
+                clearInterval(textAdder);
+              }
+            }, '{{site.more_authors_animation_delay}}');
+          "
+        >
+          {{- more_authors_hide -}}
+        </span>
       {%- endif -%}
       .
     </span>
 
     <span class="periodical" style="font-style: italic;">
-      {% if entry.type == "article" %}
+      {% if entry.type == 'article' %}
         {{ entry.journal }}
-      {% elsif entry.type == "inproceedings" %}
+      {% elsif entry.type == 'inproceedings' %}
         {{ entry.booktitle }}
       {% endif %}
     </span>
 
     {% if entry.note %}
-      <span class="note" style="color: #666;">
-        ({{ entry.note }})
-      </span>
+      <span class="note" style="color: #666;"> ({{ entry.note }}) </span>
     {% endif %}
   </div>
 </div>
