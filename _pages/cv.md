@@ -14,9 +14,13 @@ toc:
 - Ph.D. in Cryptography, **Boston University**, 2029 (expected)
 - B.S. in Computer Science and Mathematics, **Carnegie Mellon University**, 2020
 
+<div class="mt-5"></div>
+
 ## Publications
 
 {% bibliography -f papers --template bib_list %}
+
+<div class="mt-5"></div>
 
 ## Work Experience
 
@@ -46,6 +50,8 @@ toc:
 
 - June 2020 - Feb 2021: Software Engineer at **Clumio**
   - Backend Team: Database Cloud Protection (Backup and Recovery)
+
+<div class="mt-5"></div>
 
 ## Talks
 

@@ -106,7 +106,9 @@
     </span>
 
     {% if entry.note %}
-      <span class="note" style="color: #666;"> ({{ entry.note }}) </span>
+      <span style="font-variant: small-caps; font-size: 0.85em; margin-left: 0.5rem; color: #333;">
+        {{ entry.note }}
+      </span>
     {% endif %}
   </div>
 </div>
