@@ -349,7 +349,7 @@
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
-        {{ entry.abstract | markdownify }}
+        {{ entry.abstract | strip | replace: "  ", "" | replace: "  ", "" | markdownify }}
       </div>
     {% endif %}
 
