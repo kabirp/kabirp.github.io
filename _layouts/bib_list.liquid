@@ -1,18 +1,18 @@
 ---
 ---
-<div class="row" style="margin-bottom: 1.5rem;">
+<div class="row" style="margin-bottom: 0.5rem;">
   <div class="col-sm-12">
-    <div class="title" style="font-weight: bold; font-size: 1.1rem;">
+    <span class="title" style="font-weight: bold;">
       {% if entry.pdf %}
-        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">{{ entry.title }}</a>
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" style="color: inherit;">{{ entry.title }}</a>.
       {% elsif entry.html %}
-        <a href="{{ entry.html }}" target="_blank">{{ entry.title }}</a>
+        <a href="{{ entry.html }}" target="_blank" style="color: inherit;">{{ entry.title }}</a>.
       {% else %}
-        {{ entry.title }}
+        {{ entry.title }}.
       {% endif %}
-    </div>
+    </span>
 
-    <div class="author">
+    <span class="author">
       {% assign author_array_size = entry.author_array | size %}
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
@@ -44,7 +44,7 @@
           {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
         {%- endif -%}
         {%- if author_is_self -%}
-          <em style="font-weight: bold;">{{author.first}} {{author_last_html}}</em>
+          <span style="font-weight: bold;">{{author.first}} {{author_last_html}}</span>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">{{author.first}} {{author_last_html}}</a>
@@ -85,23 +85,21 @@
             "
         >{{more_authors_hide}}</span>
       {%- endif -%}
-    </div>
+      .
+    </span>
 
-    <div class="periodical" style="font-style: italic;">
+    <span class="periodical" style="font-style: italic;">
       {% if entry.type == "article" %}
         {{ entry.journal }}
       {% elsif entry.type == "inproceedings" %}
         {{ entry.booktitle }}
       {% endif %}
-      {% if entry.year %}
-        ({{ entry.year }})
-      {% endif %}
-    </div>
+    </span>
 
     {% if entry.note %}
-      <div class="note" style="font-size: 0.9rem; color: #666; margin-top: 2px;">
-        {{ entry.note }}
-      </div>
+      <span class="note" style="color: #666;">
+        ({{ entry.note }})
+      </span>
     {% endif %}
   </div>
 </div>
