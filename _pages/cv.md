@@ -18,7 +18,7 @@ toc:
 
 ## Publications
 
-{% bibliography -f papers --template bib_list %}
+{% bibliography -f papers --template bib_list --group_by none %}
 
 <div class="mt-5"></div>
 
