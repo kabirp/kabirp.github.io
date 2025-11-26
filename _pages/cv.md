@@ -16,7 +16,7 @@ toc:
 
 ## Publications
 
-{% bibliography -f papers %}
+{% bibliography -f papers --template bib_list %}
 
 ## Work Experience
 

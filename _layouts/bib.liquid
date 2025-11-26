@@ -346,10 +346,43 @@
       </div>
     {% endif %}
 
-    {% if entry.abstract %}
-      <!-- Hidden abstract block -->
+{% if entry.abstract or entry.abstract1 %}
       <div class="abstract hidden">
-        {{ entry.abstract | strip | replace: "  ", "" | replace: "  ", "" | markdownify }}
+        {% if entry.abstract %}
+          <p>{{ entry.abstract }}</p>
+        {% endif %}
+        
+        {% if entry.abstract1 %}
+          <p>{{ entry.abstract1 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract2 %}
+          <p>{{ entry.abstract2 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract3 %}
+          <p>{{ entry.abstract3 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract4 %}
+          <p>{{ entry.abstract4 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract5 %}
+          <p>{{ entry.abstract5 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract6 %}
+          <p>{{ entry.abstract6 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract7 %}
+          <p>{{ entry.abstract7 }}</p>
+        {% endif %}
+        
+        {% if entry.abstract8 %}
+          <p>{{ entry.abstract8 }}</p>
+        {% endif %}
       </div>
     {% endif %}
 
