@@ -20,23 +20,18 @@
 }
 
 @misc{PLFT25,
-  title     = {Laminate: Delegation with Integrity and Secrecy},
+  title     = {Laminate: Succinct SIMD-Friendly Verifiable FHE},
   author    = {Kabir Peshawaria and Zeyu Liu and Ben Fisch and Eran Tromer},
   year      = {2025},
   selected  = {true},
   note      = {First Author},
   abstract1 = {
-               In outsourcing computation to untrusted servers, one can cryptographically ensure privacy using Fully Homomorphic Encryption (FHE) or ensure integrity using Verifiable Computation (VC) such as SNARK proofs. While each is practical for some applications in isolation, efficiently composing FHE and VC into Verifiable Computing on Encrypted Data (VCoED) remains an open problem.
+               In outsourcing computation to untrusted servers, one can cryptographically ensure privacy using Fully Homomorphic Encryption (FHE) or ensure integrity using Verifiable Computation (VC) such as SNARK proofs. While each is practical for some applications in isolation, efficiently composing FHE and VC into Verifiable Computing on Encrypted Data (VCoED) remains an open problem. 
                },
   abstract2 = {
-               Existing approaches generally fall into two categories: SNARK-over-FHE, which proves the correctness of FHE operations but is impractically slow for the server; and FHE-over-SNARK, which evaluates a SNARK prover homomorphically. Unfortunately, prior FHE-over-SNARK constructions suffer from large proof sizes and super-constant multiplicative depth due to their reliance on Polynomial Commitments. Additionally, they incur high witness reduction costs by forcing payload data into fixed plaintext fields, and they monopolize the FHE scheme's parallel capacity for commitment generation, preventing the payload computation itself from exploiting SIMD batching.
+               We introduce Laminate, the first practical method for adding integrity to BGV-style FHE, thereby achieving VCoED. Our approach combines the blind interactive proof framework with a tailored variant of the GKR proof system that avoids committing to intermediate computation states. We further introduce variants employing transcript packing and folding techniques. The resulting encrypted proofs are concretely succinct: 270kB, compared to 1TB in prior work, to evaluate a batch of $B=2^{14}$ instances of size $n=2^{20}$ and depth $d=32$. Asymptotically, the proof size and verifier work is $O(d \log (Bn))$, compared to $\Omega(BN\log n)$ in prior work (for ring dimension $N$).
                },
   abstract3 = {
-               In this work, we introduce Laminate, the first practical compiler that upgrades BGV-style FHE schemes into a full VCoED protocol. Laminate draws inspiration from the GKR protocol, which crucially does not require the prover to commit to intermediate values of the computation. This allows our compiler to add only a small constant multiplicative depth to the FHE scheme, whereas prior works require a super-constant increase. Specifically, we require only 1.5 levels (one ciphertext-ciphertext and one scalar-ciphertext multiplication) when utilizing all SIMD slots for independent instances, or 2.5 levels for smaller batches using our novel transcript packing technique.
-               },
-  abstract4 = {
-               Laminate demonstrates a 660x speedup in homomorphic proving time compared to the state-of-the-art Phalanx scheme when using all SIMD slots for independent instances,
-               and a proof size reduction of 230x independent of the number of instances.
-               Beyond these improvements, Laminate provides even greater end-to-end efficiency gains. Our field-agnostic design eliminates the expensive witness reduction costs inherent to prior works, where the payload computation's plaintext field often mismatches the SNARK prover's fixed field. Furthermore, by minimizing the noise overhead for proving, Laminate enables significantly faster payload evaluation than prior approaches.
+               Unlike prior schemes, Laminate utilizes the full SIMD capabilities of FHE for both the payload circuit evaluation and proof generation; adds only constant multiplicative depth on top of payload evaluation while performing $\tilde{O}(n)$ FHE operations; eliminates the need for witness reduction; and is field-agnostic. The resulting cost of adding integrity to FHE, compared to assuming honest evaluation, is ${\sim}12\times$ to ${\sim}36\times$ overhead (for deep multiplication-heavy circuits of size $2^{20}$), which is $>500\times$ faster than the state-of-the-art.
                }
 }
