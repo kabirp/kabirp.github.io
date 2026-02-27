@@ -9,7 +9,10 @@ nav_order: 4
 
 ## Boston University
 
-- _Details on future teaching assignments to come._
+**[CS 595: Blockchain and its Applications](https://cs-people.bu.edu/tromer/blockchain26s.html)**
+
+- **Teaching Fellow**
+- Spring 2026 (Instructor: Eran Tromer)
 
 ---
 
