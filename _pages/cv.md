@@ -61,4 +61,9 @@ toc:
 
 ## Talks
 
+- **Laminate: Succinct SIMD-Friendly Verifiable FHE**
+  - [BU Sec seminar](https://www.bu.edu/cs/research-groups/security/busec/)
+  - [MIT CIS Seminar](https://cis.csail.mit.edu/seminar.html)
+  - [NYU CryptoSec seminar](https://cs.nyu.edu/cryptosec/seminars/)
+  - [ZKProof8](https://zkproof.org/call-for-papers-8th-zkproof-workshop/)
 - Find my recorded talks on my [YouTube Channel](https://www.youtube.com/channel/UCJE0XzgBDdA-xpwaBjmoKGg)
