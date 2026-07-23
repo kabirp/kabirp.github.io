@@ -29,6 +29,9 @@ latest_posts:
 
 I am a second-year Computer Science Ph.D. student at [Boston University](https://www.bu.edu/tcs/), under the supervision of [Prof. Eran Tromer](https://cs-people.bu.edu/tromer/).
 
+For the 2026–2027 academic year, I am co-organizing the BU Cryptography and Security Seminars ([BUSec](https://www.bu.edu/cs/research-groups/security/busec/)). You can contact me regarding the seminar schedule or speaking opportunities. 
+Prior to this, I helped organize the [BU Algorithms and Theory Seminar](https://www.bu.edu/tcs/) (2025–2026).
+
 ### Research Interests
 
 My research focuses on **probabilistic proof systems**, namely **SNARGs** (succinct non-interactive arguments). My recent work also includes **property testing** and the co-design of **homomorphic encryption** and **verifiable computation** protocols.
