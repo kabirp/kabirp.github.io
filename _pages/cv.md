@@ -55,7 +55,7 @@ toc:
 
 ## Professional Service
 
-- **Subreviewer**: CRYPTO 2025, ZKProof7, STOC 2026, ACNS 2026
+- **Subreviewer**: CRYPTO 2025, ZKProof7, STOC 2026, ACNS 2026, ZKProof8, AsiaCrypt 2026
 
 <div class="mt-5"></div>
 
