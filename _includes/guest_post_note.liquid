@@ -1,0 +1,15 @@
+{% if page.guest_post or page.ai_disclaimer %}
+  <aside class="guest-post-note" aria-label="Post disclaimer">
+    <p>
+      [
+      {%- if page.guest_post -%}
+        This is a guest post by {{ page.author -}}
+        {%- if page.author_pseudonym %} (a pseudonym){% endif %}.
+      {%- endif %}
+      {% if page.ai_disclaimer -%}
+        {{ page.ai_disclaimer -}}
+      {%- endif %}
+      &mdash; {{ site.first_name }}.]
+    </p>
+  </aside>
+{% endif %}

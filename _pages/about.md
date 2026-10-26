@@ -34,7 +34,7 @@ Prior to this, I helped organize the [BU Algorithms and Theory Seminar](https://
 
 ### AI and privacy
 
-I’m concerned about how readily we are giving AI assistants access to our private accounts, including information other people have entrusted to us. **I strongly support [Lean Into Yellow](https://leanintotheyellow.pages.dev/stop_plugging_things_in.pdf)**, which explains the privacy and security risks and offers practical advice on what to do.
+I’m concerned about how readily we are giving AI assistants access to our private accounts, including information other people have entrusted to us. **I strongly support [Lean Into Yellow]({{ '/blog/2026/lean-into-yellow/' | relative_url }})**, which explains the privacy and security risks and offers practical advice on what to do.
 
 ### Research Interests
 

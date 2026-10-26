@@ -1,0 +1,134 @@
+// Shared reading layout for every blog post, using the site's light/dark palette.
+.blog-index,
+.blog-post {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.blog-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+  }
+}
+
+.blog-index .post-list {
+  h2 {
+    margin-top: 0.5rem;
+    font-size: 1.75rem;
+  }
+
+  .post-description {
+    margin-bottom: 0.75rem;
+    line-height: 1.65;
+  }
+}
+
+.blog-post {
+  .blog-back {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-title {
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    overflow-wrap: anywhere;
+  }
+
+  .post-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0.75rem 0 1rem;
+  }
+
+  .post-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .post-content {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+
+    h2 {
+      font-size: 1.75rem;
+      margin: 2.5rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 2rem 0 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.65rem;
+    }
+
+    [id] {
+      scroll-margin-top: 5rem;
+    }
+
+    .footnotes {
+      border-top: 1px solid var(--global-divider-color);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.guest-post-note {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-style: italic;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.blog-toc {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+
+  summary {
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  > ul {
+    padding-left: 1.25rem;
+    margin: 1rem 0 0;
+  }
+}
+
+.blog-post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.95rem;
+}
